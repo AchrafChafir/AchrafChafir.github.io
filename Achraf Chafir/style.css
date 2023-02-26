@@ -1,0 +1,250 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right, #ececec, #9fd3c7);
+    
+}
+header ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: left;
+    margin: 0;
+    
+}
+header ul li{
+    list-style: none;
+    margin-right: 50px;
+    height: 40px;
+    font-size: 25px;
+}
+header ul li a {
+    text-decoration: none;
+    color: #142d4c;
+}
+header ul li:first-child{
+    height: 100%;
+
+}
+header ul li img{
+    width: 120px;
+    height: auto;
+}
+
+/*---------- Slider ----------*/
+
+.img-conteneur img{
+    height: 800px;
+    width: 1200px;
+}
+
+.slider{
+    overflow: hidden;
+    height: 800px;
+    max-width: 1200px;
+    border-radius: 12px;
+    background-color: #385170;
+    margin: 0 0 0 100px;
+}
+.slider-bg{
+    background-color: #385170;
+    height: 900px;
+}
+@keyframes slider{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left:2400px;}
+    50% {left:2400px;}
+    60% {left:1200px;}
+    70% {left:1200px;}
+    80% {left:0px;}
+    90% {left:0px;}
+    100% {left:0px;}
+}
+
+.slider-img{
+    width: 6000px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    animation-name: slider;
+    animation-duration: 33s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+
+}
+
+.img-conteneur{
+    height: 800px;
+    max-width: 1200px;
+    position: relative;
+    float: left;
+    
+}
+
+/*---------- Services ----------*/
+
+.S-conteneur{
+    min-height: 700px;
+    width: 100%;
+    background-color: #ececec;
+    position: relative;
+    padding-top: 100px;
+}
+
+.S-conteneur h1{
+    position: absolute;
+    top: 1%;
+    left: 40%;
+    font-size: 40px;
+}
+
+.card-conteneur{
+    display: flex;
+    min-height: 600px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #9fd3c7;
+}
+
+.card{
+    width: 250px;
+    height: 450px;
+    border-radius: 15px;
+    background-color: #142d4c;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.card-img{
+    background-color: aquamarine;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 15px 15px 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.img1{
+    background-image: url("img/mere_et_enfant-v03.jpg");
+}
+.img2{
+    background-image: url("img/cardiologue-v03.jpg");
+}
+.img3{
+    background-image: url("img/modeles_de_simulation-v2.jpg");
+}
+.img4{
+    background-image: url("img/reanimation-v03.jpg");
+}
+
+/*---------- Footer ----------*/
+
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: #233142;
+    padding-top: 100px;
+}
+.footer-conteneur{
+    width: 100%;
+    height: 400px;
+    background-color: #385170;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.footer-col{
+    width: 30%;
+    height: 100%;
+}
+.links ul{
+    list-style: none;
+    padding: 0;
+}
+.links a{
+    text-decoration: none;
+    color: #e3e3e3;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+.links a:hover{
+    font-size: 25px;
+    transition: all 0.5s ease;
+}
+.footer-col h4{
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    width: auto;
+
+    
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 47%;
+    bottom: -15px;
+    background-color: crimson;
+    width: 25px;
+    height: 3px;
+    transition: all 0.5s ease-in-out;
+}
+.footer-col h4:hover::before{
+    left: 0;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.links li{
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+.actualites input[type="email"] {
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    border: 0;
+    outline: 0;
+    margin-top: 50px;
+    font-size: 15px;
+}
+iframe{
+    width: 100%;
+    height: 250px;
+    
+}
+.actualites input[type="button"]{
+    margin-top: 60px;
+    margin-left: 26%;
+    border: 0;
+    border-radius: 15px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    color: #e3e3e3;
+    background-color: #233142;
+    transition: all 0.5s ease-in-out;
+}
+.actualites input[type="button"]:hover{
+    background-color: #142d4c;
+    font-size: 25px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
